@@ -24,11 +24,9 @@ import Pagination from './Pagination';
       }
 
     function search() {
-        console.log(data);
        loadBooks(data, function(bookList){
-            
             setBooks(bookList)
-            console.log(books)
+            console.log(bookList)
        })
 
       }  
@@ -40,7 +38,6 @@ import Pagination from './Pagination';
                     <input id="input" onChange={handleChange} placeholder='Search books' ></input> 
                     <button onClick={search}>Search</button>
                 </div>
-                    
                 <Pagination bookLst={books}></Pagination>
               </>
           )
