@@ -5,14 +5,18 @@
     padding: .5em;
     border: 2px solid #7e04de;
     height: 3em;
+    justify-content: space-between;
 }
 
 #searchDiv input{
-    width: 20vw;
+    max-width: 20vw;
+    min-width: 30vw;
     margin-right: .2em;
     border: 1px solid #7e04de;
     font-size: 1.2rem;
     border-radius: .3em;
+    height: 80%;
+    padding-left: .5em;
 }
 
 
@@ -26,3 +30,19 @@
     /* margin: 1em; */
     cursor: pointer;
 }
+
+#filterBtn{
+}
+
+
+#select{
+    padding: 0.3em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: #9898ff;
+    color: white;
+    font-size: .9em;
+    margin-left: .2em;
+   
+}
+

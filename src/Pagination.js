@@ -57,7 +57,7 @@ function Pagination(props) {
                 </div>
                 {newBooks?newBooks.map( (book) => (
                         <App name={book.volumeInfo.title} src={book.volumeInfo.imageLinks.thumbnail} price={book?.saleInfo?.listPrice?.amount} author={book.volumeInfo.authors?book.volumeInfo.authors[0]:"Author Not Available"}  category={book.volumeInfo.categories?book.volumeInfo.categories[0]:"Genre Not Available"} />
-                    )):books.map( (book) => (
+                    )):books?.map( (book) => (
                         <App name={book.volumeInfo.title} src={book.volumeInfo.imageLinks.thumbnail} price={book?.saleInfo?.listPrice?.amount} author={book.volumeInfo.authors?book.volumeInfo.authors[0]:"Author Not Available"}  category={book.volumeInfo.categories?book.volumeInfo.categories[0]:"Genre Not Available"} />
                     ))}
               </>
