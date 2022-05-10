@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './Request.css';
-import { useState, useEffect, useCallback } from "react";
-import App from './App';
+import { useState } from "react";
+// import App from './App';
 import Pagination from './Pagination';
 
 function loadBooks (d, callback){
@@ -21,7 +21,7 @@ function loadBooks (d, callback){
   
   export default function Request(props) {
       let [data, setData] = useState("java");
-      let [books, setBooks] = useState([]);
+      let [books, setBooks] = useState(props.books);
       
     
     //   window.onload = function(){
@@ -40,8 +40,7 @@ function loadBooks (d, callback){
             console.log(books)
        })
 
-      }
-    
+      }  
     
 
           return (
